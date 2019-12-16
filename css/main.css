@@ -3562,7 +3562,7 @@ a.tag:hover {
 
 .card {
   background-color: white;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 .5em 1em -.125px rgba(10, 10, 10, 0.1), 0 12 10 4px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   max-width: 100%;
   position: relative; padding-top: 20px;}
@@ -5048,8 +5048,8 @@ label.panel-block {
   .tabs ul {
     align-items: center;
     border-bottom-color: #dbdbdb;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -6798,6 +6798,7 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
 
 
 
