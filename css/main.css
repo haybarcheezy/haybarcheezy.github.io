@@ -238,7 +238,6 @@ h5,
 h6 {
   font-size: 100%;
   font-weight: normal; }
-
 ul {
   list-style: none; }
 
@@ -1930,7 +1929,8 @@ a.box:active {
 
 .content h3 {
   font-size: 1.5em;
-  margin-bottom: 0.6666em; }
+  margin-bottom: 0.6666em;
+  font-family: Poppins; }
   .content h3:not(:first-child) {
     margin-top: 1.3333em; }
 
