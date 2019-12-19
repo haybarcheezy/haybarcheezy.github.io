@@ -27,3 +27,11 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+
+.top {
+  order: 2;
+}
+
+.bottom {
+  order: 1;
+}

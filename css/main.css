@@ -706,6 +706,14 @@ table th {
   .has-text-right-fullhd {
     text-align: right !important; } }
 
+.column.top {
+  order: 2!important;
+}
+
+.column.bottom {
+  order: 1!important;
+}
+
 .is-capitalized {
   text-transform: capitalize !important; }
 
