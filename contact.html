@@ -1,5 +1,5 @@
-<!DOCTYPE html lang="en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,22 +85,21 @@
                 <h2 style="text-align: center; font-family: Mukta, sans-serif">Send A Message</h2>
             </div>
 
-    <form id="my-form" name="contact" netlify>
+    <form id="my-form" name="contact" data-netlify="true">
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="text" placeholder="e.g Alex Smith">
+                    <input class="input" type="text" name="name" placeholder="e.g Alex Smith">
                     <span class="icon is-small is-left">
         <i class="fa fa-user"></i>
       </span>
                 </div>
             </div>
 
-
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
+                    <input class="input" type="email" name="email" placeholder="e.g Alexsmith@gmail.com">
                     <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
@@ -110,7 +109,7 @@
             <div class="field">
                 <label class="label">Phone</label>
                 <div class="control has-icons-left">
-                    <input class="input" type="number" placeholder="e.g (000) 000-000">
+                    <input class="input" type="number" name="phone" placeholder="e.g (000) 000-000">
                     <span class="icon is-small is-left">
         <i class="fa fa-phone"></i>
       </span>
@@ -120,26 +119,18 @@
             <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="How can we help you?"></textarea>
+                    <textarea class="textarea" type="text" name="message" placeholder="How can we help you?"></textarea>
                 </div>
             </div>
 
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-primary" style="background-color: #7957d5">Submit</button>
+                    <button class="button is-primary" type="submit" style="background-color: #7957d5">Submit</button>
                 </div>
             </div>
     </form>
         </div>
     </div>
-    <script>$("#my-form").submit(function(e) {
-        e.preventDefault();
-
-        var $form = $(this);
-        $.post($form.attr("action"), $form.serialize()).then(function() {
-            alert("Thank you!");
-        });
-    });</script>
 </section>
 <footer class="footer">
     <div class="container">
