@@ -1,111 +1,114 @@
 <!DOCTYPE html lang="en">
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dev Testing with Bulma and Javascript</title>
-  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=block" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Mukta:500,700&display=block" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev Testing with Bulma and Javascript</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:500,700&display=block" rel="stylesheet">
 
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../css/hero.css">
-  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 </head>
+
 <body>
-<section class="hero is-fullheight is-transparent" style="background-image: url(https://houstonwebandseo.com/wp-content/uploads/2019/12/cool-background.png); background-size: cover;">
-  <div class="hero-head">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand" style="background: #fff">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>
+    <section class="hero is-fullheight is-transparent" style="background-image: url(https://houstonwebandseo.com/wp-content/uploads/2019/12/cool-background.png); background-size: cover;">
+        <div class="hero-head">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand" style="background: #fff">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    </a>
 
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu" style="background: #fff">
-        <div class="navbar-start">
-          <a href="https://affectionate-yalow-78b2b5.netlify.com/" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                < <div id="navbarBasicExample" class="navbar-menu" style="background: #fff">
+                    <div class="navbar-start">
+                        <a href="https://affectionate-yalow-78b2b5.netlify.com/" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
             Home
           </a>
 
-          <a href="https://affectionate-yalow-78b2b5.netlify.com/web-design" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                        <a href="https://affectionate-yalow-78b2b5.netlify.com/web-design" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
             Web Design
           </a>
 
-          <a href="https://affectionate-yalow-78b2b5.netlify.com/optimization" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                        <a href="https://affectionate-yalow-78b2b5.netlify.com/optimization" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
             Optimization
           </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link is-arrowless" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
               More
             </a>
 
-            <div class="navbar-dropdown">
-              <a href="https://affectionate-yalow-78b2b5.netlify.com/example-sites" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                            <div class="navbar-dropdown">
+                                <a href="https://affectionate-yalow-78b2b5.netlify.com/example-sites" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
                 Example Sites
               </a>
-              <a href="https://affectionate-yalow-78b2b5.netlify.com/contact" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
+                                <a href="https://affectionate-yalow-78b2b5.netlify.com/contact" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
                 Contact
               </a>
-            </div>
-          </div>
-        </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <button class="button">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <button class="button">
                 <span class="icon">
                   <i class="fa fa-github"></i>
                 </span>
                 <a href="https://affectionate-yalow-78b2b5.netlify.com/optimization" style="color: rgb(0,0,0,0.7)">Check it out! GitHub</a>
               </button>
-            </div>
-          </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
-      </div>
-    </nav>
+        </nav>
 
-    <script type="text/javascript">
-      (function() {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
+        <script type="text/javascript">
+            (function() {
+                var burger = document.querySelector('.burger');
+                var nav = document.querySelector('#' + burger.dataset.target);
 
-        burger.addEventListener('click', function() {
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-        });
-      })();
-    </script>
-  </div>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title" style="font-family: Mukta,sans-serif; color: #fff;">
-        Breathe Life into Your Brand
-      </h1>
-      <h2 class="subtitle" style="color: #fff">
-        Professional Websites. Technical SEO. Web Optimization.
-      </h2>
-        <button class="button is-white"><a href="https://affectionate-yalow-78b2b5.netlify.com/web-design">Get Started</a></button>
-    </div>
-  </div>
-  <div class="hero-foot mb-20" style="background: #00000020">
-    <div class="container">
-      <div class="tabs is-centered">
-        <ul style="border-bottom-width: 0px">
-          <li><a href="#"><?xml version="1.0" encoding="UTF-8"?>
-            <svg width="71px" height="80px" viewBox="0 0 71 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                burger.addEventListener('click', function() {
+                    burger.classList.toggle('is-active');
+                    nav.classList.toggle('is-active');
+                });
+            })();
+        </script>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title" style="font-family: Mukta,sans-serif; color: #fff;">
+                    Breathe Life into Your Brand
+                </h1>
+                <h2 class="subtitle" style="color: #fff">
+                    Professional Websites. Technical SEO. Web Optimization.
+                </h2>
+                <button class="button is-white"><a href="https://affectionate-yalow-78b2b5.netlify.com/web-design">Get Started</a></button>
+            </div>
+        </div>
+        <div class="hero-foot mb-20" style="background: #00000020">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul style="border-bottom-width: 0px">
+                        <li>
+                            <a href="#">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="71px" height="80px" viewBox="0 0 71 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
               <title>HTML 5 Logo</title>
               <desc>Created with Sketch.</desc>
@@ -117,9 +120,12 @@
                   <path d="M35.0929368,32.5806742 L35.0929368,41.4042111 L45.9113238,41.4042111 L44.8913683,52.8481216 L35.0929368,55.5040572 L35.0929368,64.6840149 L53.1034857,59.6710567 L53.2352267,58.1798562 L55.3000186,34.9501916 L55.5143768,32.5806742 L53.1471867,32.5806742 L35.0929368,32.5806742 Z M35.0929368,14.7211896 L35.0929368,23.5450469 L56.3139134,23.5450469 L56.4898339,21.5615852 L56.8901604,17.0884644 L57.1003717,14.7211896 L35.0929368,14.7211896 Z" id="Shape" fill="#FFFFFF"></path>
                 </g>
               </g>
-            </svg></a></li>
-          <li><a href="#"><?xml version="1.0" encoding="UTF-8"?>
-            <svg width="72px" height="80px" viewBox="0 0 72 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            </svg></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="72px" height="80px" viewBox="0 0 72 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
               <title>CSS3 Logo</title>
               <desc>Created with Sketch.</desc>
@@ -154,9 +160,12 @@
                   <polygon id="Path" fill="#000000" opacity="0.05" points="35.6036036 14.7027027 13.1171171 14.7027027 14.1924566 23.3513514 35.6036036 23.3513514 35.6036036 14.7027027"></polygon>
                 </g>
               </g>
-            </svg></a></li>
-          <li><a href="#"><?xml version="1.0" encoding="UTF-8"?>
-            <svg width="70px" height="80px" viewBox="0 0 70 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            </svg></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="70px" height="80px" viewBox="0 0 70 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
               <title>Javascript Logo</title>
               <desc>Created with Sketch.</desc>
@@ -168,9 +177,12 @@
                   <path d="M34.9774769,15.3501538 L17.8884923,15.3501538 L15.4230154,41.9741538 L15.4742154,41.8087385 L34.9774769,41.8087385 L34.9774769,33.1244308 L24.6705231,33.1244308 L25.0801231,24.2156308 L34.9774769,24.2156308 L34.9774769,15.3501538 Z M24.6705231,46.2119385 L15.8129231,46.2119385 L17.0732308,59.8272 L34.9696,64.8999385 L34.9696,55.8414769 L25.2337231,53.0294154 L24.6705231,46.2119385 Z" id="Shape" fill="#EBEBEB"></path>
                 </g>
               </g>
-            </svg></a></li>
-          <li><a href="https://getbootstrap.com/"><?xml version="1.0" encoding="UTF-8"?>
-            <svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://getbootstrap.com/">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
               <title>Bootstrap Logo</title>
               <desc>Created with Sketch.</desc>
@@ -180,9 +192,12 @@
                   <path d="M33.1742384,35.3869047 L33.1742384,24.0576856 L43.146665,24.0576856 C44.0964247,24.0576856 45.0122506,24.136831 45.8941703,24.2951243 C46.77609,24.4534176 47.5562378,24.7360799 48.2346375,25.1431197 C48.9130375,25.5501596 49.4557491,26.1154842 49.8627887,26.8391107 C50.2698288,27.562737 50.4733456,28.4898695 50.4733456,29.6205357 C50.4733456,31.655735 49.862795,33.1255791 48.6416753,34.0301122 C47.4205559,34.934645 45.86026,35.3869047 43.9607406,35.3869047 L33.1742384,35.3869047 L33.1742384,35.3869047 Z M22.5234156,15.78125 L22.5234156,64.21875 L45.9959297,64.21875 C48.1668088,64.21875 50.2811231,63.9473941 52.3389356,63.4046744 C54.3967481,62.8619547 56.2284,62.0252741 57.8339459,60.8946078 C59.4394922,59.7639416 60.7171259,58.3054041 61.6668856,56.5189513 C62.616645,54.7324987 63.0915178,52.6181844 63.0915178,50.1759453 C63.0915178,47.1457597 62.3565959,44.5565728 60.8867297,42.4083072 C59.4168634,40.2600413 57.1894844,38.7562775 54.2045256,37.8969712 C56.3754047,36.8567584 58.0148462,35.5225922 59.1228991,33.8944328 C60.2309522,32.2662734 60.7849703,30.2311047 60.7849703,27.7888655 C60.7849703,25.527533 60.4118559,23.6280423 59.6656162,22.0903361 C58.9193766,20.55263 57.8678728,19.3202223 56.5110731,18.393076 C55.1542738,17.4659297 53.5261388,16.7988466 51.6266194,16.3918067 C49.7271,15.9847669 47.6240925,15.78125 45.3175331,15.78125 L22.5234156,15.78125 L22.5234156,15.78125 Z M33.1742384,55.9423144 L33.1742384,42.6457459 L44.7748163,42.6457459 C47.0813753,42.6457459 48.9356403,43.1771509 50.3376662,44.2399772 C51.7396925,45.3028034 52.440695,47.0779228 52.440695,49.5653887 C52.440695,50.831735 52.2258716,51.8719322 51.7962184,52.6860119 C51.3665653,53.5000916 50.7899341,54.1445616 50.0663078,54.6194416 C49.3426812,55.0943213 48.5060009,55.4335162 47.5562412,55.6370359 C46.6064816,55.8405559 45.6115103,55.9423144 44.5712972,55.9423144 L33.1742384,55.9423144 L33.1742384,55.9423144 Z" id="Shape" fill="#FFFFFF"></path>
                 </g>
               </g>
-            </svg></a></li>
-          <li><a href="https://bulma.io/"><?xml version="1.0" encoding="UTF-8"?>
-            <svg width="55px" height="80px" viewBox="0 0 55 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://bulma.io/">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg width="55px" height="80px" viewBox="0 0 55 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
               <title>Bulma Logo</title>
               <desc>Created with Sketch.</desc>
@@ -191,200 +206,205 @@
                   <polygon id="Path" points="0 54.9061662 4.99146966 19.9658786 24.9573482 0 49.9146966 24.9573482 34.9402876 39.9317572 54.9061662 59.8976358 24.9573482 79.8635144"></polygon>
                 </g>
               </g>
-            </svg></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container">
-  <div class="columns features is-marginless is-vcentered" style="padding-top: 30px; padding-bottom: 30px">
-    <div class="column is-4">
-      <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-        <div class="card-image has-text-centered">
-          <i class="fa fa-desktop" style="font-size: 3.5em; color: #7957d590"></i>
+            </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="card-content">
-          <div class="content">
-            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Design</h2>
-            <p>Give visitors a hassle free & pleasant website that allows them to complete a task, buy a product or contact you with not interference. A great website design isn’t just visually appealing, but is also easily navigated.</p>
-            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
-          </div>
+    </section>
+    <section class="container">
+        <div class="columns features is-marginless is-vcentered" style="padding-top: 30px; padding-bottom: 30px">
+            <div class="column is-4">
+                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                    <div class="card-image has-text-centered">
+                        <i class="fa fa-desktop" style="font-size: 3.5em; color: #7957d590"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Design</h2>
+                            <p>Give visitors a hassle free & pleasant website that allows them to complete a task, buy a product or contact you with not interference. A great website design isn’t just visually appealing, but is also easily navigated.</p>
+                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                    <div class="card-image has-text-centered">
+                        <i class="fa fa-search" style="font-size: 3.5em; color: #7957d590"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Technical SEO</h2>
+                            <p>Driving traffic to your business means being visible to search engines. Tailor your websites content to what your ideal customer will be searching for when looking for your businesses product or service. A site set-up correctly
+                                will see higher monthly traffic.</p>
+                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                    <div class="card-image has-text-centered">
+                        <i class="fa fa-cogs" style="font-size: 3.5em; color: #7957d590"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Optimization</h2>
+                            <p>Don’t destroy mobile users data plan with uncompressed images and unoptimized web pages. These factors are contributors to slow loading times and nobody likes waiting these days. An optimized site should be smooth and delivered
+                                at blazing speed.</p>
+                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="column is-4">
-      <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-        <div class="card-image has-text-centered">
-          <i class="fa fa-search" style="font-size: 3.5em; color: #7957d590"></i>
-        </div>
-        <div class="card-content">
-          <div class="content">
-            <h2 style="text-align: center; font-family: Mukta,sans-serif">Technical SEO</h2>
-            <p>Driving traffic to your business means being visible to search engines. Tailor your websites content to what your ideal customer will be searching for when looking for your businesses product or service. A site set-up correctly will see higher monthly traffic.</p>
-            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-4">
-      <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-        <div class="card-image has-text-centered">
-          <i class="fa fa-cogs" style="font-size: 3.5em; color: #7957d590"></i>
-        </div>
-        <div class="card-content">
-          <div class="content">
-            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Optimization</h2>
-            <p>Don’t destroy mobile users data plan with uncompressed images and unoptimized web pages. These factors are contributors to slow loading times and nobody likes waiting these days. An optimized site should be smooth and delivered at blazing speed.</p>
-            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018">Learn More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-<section class="container" style="padding-left: 1em; padding-right: 1em;">
-    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
-      <div class="column bottom" style="order: 1; text-align: center">
-        <img src="https://houstonwebandseo.com/pictures/2019/12/finance-e1576513854497.png" alt="filler for bulma site">
-      </div>
-      <div class="column">
-        <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
-            <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
-            <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
-            built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
-            and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
-            beautiful and unique website or a power-house lead generating website designed strictly with marketing in
-              mind, we have the tools to make it happen.</p></div></div>
-    </div>
-</section>
-<section class="container" style="padding-left: 1em; padding-right: 1em;">
-  <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
-    <div class="column" style="text-align: center">
-      <img src="https://houstonwebandseo.com/wp-content/uploads/2019/12/Filler-1.png" alt="filler image">
-    </div>
-    <div class="column">
-      <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
-        <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
-        <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
-          built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
-          and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
-          beautiful and unique website or a power-house lead generating website designed strictly with marketing in
-          mind, we have the tools to make it happen.</p></div>
-    </div>
-  </div>
-</section>
-</section>
-<section style="padding-top: 120px; padding-bottom: 60px; background: #7957d5">
-  <div class="container" style="box-shadow: 0 2px 4px #00000018; max-width: 600px; padding-left: 2em; padding-right: 2em; padding-top: 60px; padding-bottom: 60px; background: #ffffff; border-radius: 10px">
-    <div class="content">
-      <h2 style="text-align: center; font-family: Mukta,sans-serif">Send A Message</h2>
-    </div>
+    </section>
+    <section>
+        <section class="container" style="padding-left: 1em; padding-right: 1em;">
+            <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                <div class="column bottom" style="order: 1; text-align: center">
+                    <img src="https://houstonwebandseo.com/pictures/2019/12/finance-e1576513854497.png" alt="filler for bulma site">
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
+                        <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
+                        <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
+                            out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
+                            in mind, we have the tools to make it happen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" style="padding-left: 1em; padding-right: 1em;">
+            <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                <div class="column" style="text-align: center">
+                    <img src="https://houstonwebandseo.com/wp-content/uploads/2019/12/Filler-1.png" alt="filler image">
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
+                        <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
+                        <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
+                            out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
+                            in mind, we have the tools to make it happen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section style="padding-top: 120px; padding-bottom: 60px; background: #7957d5">
+        <div class="container" style="box-shadow: 0 2px 4px #00000018; max-width: 600px; padding-left: 2em; padding-right: 2em; padding-top: 60px; padding-bottom: 60px; background: #ffffff; border-radius: 10px">
+            <div class="content">
+                <h2 style="text-align: center; font-family: Mukta,sans-serif">Send A Message</h2>
+            </div>
 
-  <form name="contact" netlify>
-    <div class="field">
-      <label class="label">Name</label>
-      <div class="control has-icons-left">
-        <input class="input" type="text" placeholder="e.g Alex Smith">
-        <span class="icon is-small is-left">
+            <form name="contact" netlify>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g Alex Smith">
+                        <span class="icon is-small is-left">
         <i class="fa fa-user"></i>
       </span>
-      </div>
-    </div>
+                    </div>
+                </div>
 
 
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control has-icons-left">
-        <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
-        <span class="icon is-small is-left">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
+                        <span class="icon is-small is-left">
       <i class="fa fa-envelope"></i>
     </span>
-      </div>
-    </div>
+                    </div>
+                </div>
 
 
-    <div class="field">
-      <label class="label">Phone</label>
-      <div class="control has-icons-left">
-        <input class="input" type="number" placeholder="e.g (000) 000-000">
-        <span class="icon is-small is-left">
+                <div class="field">
+                    <label class="label">Phone</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="number" placeholder="e.g (000) 000-000">
+                        <span class="icon is-small is-left">
         <i class="fa fa-phone"></i>
       </span>
-      </div>
-    </div>
+                    </div>
+                </div>
 
-    <div class="field">
-      <label class="label">Message</label>
-      <div class="control">
-        <textarea class="textarea" placeholder="How can we help you?"></textarea>
-      </div>
-    </div>
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="How can we help you?"></textarea>
+                    </div>
+                </div>
 
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-primary" style="box-shadow: 0 2px 4px #00000018; background-color: #7957d5;">Submit</button>
-      </div>
-  </div>
-  </form>
-  </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-3 is-offset-2">
-        <h2><strong>Category</strong></h2>
-        <ul>
-          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-          <li><a href="#">Vestibulum errato isse</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-          <li><a href="#">Aisia caisia</a></li>
-          <li><a href="#">Murphy's law</a></li>
-          <li><a href="#">Flimsy Lavenrock</a></li>
-          <li><a href="#">Maven Mousie Lavender</a></li>
-        </ul>
-      </div>
-      <div class="column is-3">
-        <h2><strong>Category</strong></h2>
-        <ul>
-          <li><a href="#">Labore et dolore magna aliqua</a></li>
-          <li><a href="#">Kanban airis sum eschelor</a></li>
-          <li><a href="#">Modular modern free</a></li>
-          <li><a href="#">The king of clubs</a></li>
-          <li><a href="#">The Discovery Dissipation</a></li>
-          <li><a href="#">Course Correction</a></li>
-          <li><a href="#">Better Angels</a></li>
-        </ul>
-      </div>
-      <div class="column is-4">
-        <h2><strong>Category</strong></h2>
-        <ul>
-          <li><a href="#">Objects in space</a></li>
-          <li><a href="#">Playing cards with coyote</a></li>
-          <li><a href="#">Goodbye Yellow Brick Road</a></li>
-          <li><a href="#">The Garden of Forking Paths</a></li>
-          <li><a href="#">Future Shock</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="content has-text-centered">
-      <p>
-        <a class="icon" href="https://github.com/BulmaTemplates/bulma-templates">
-          <i class="fa fa-github"></i>
-        </a>
-      </p>
-      <div class="control level-item">
-        <a href="https://github.com/BulmaTemplates/bulma-templates">
-          <div class="tags has-addons">
-            <span class="tag is-dark">Bulma Templates</span>
-            <span class="tag is-info">MIT license</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <script src="../js/bulma.js"></script>
-</footer>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-primary" style="box-shadow: 0 2px 4px #00000018; background-color: #7957d5;">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3 is-offset-2">
+                    <h2><strong>Category</strong></h2>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Vestibulum errato isse</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Aisia caisia</a></li>
+                        <li><a href="#">Murphy's law</a></li>
+                        <li><a href="#">Flimsy Lavenrock</a></li>
+                        <li><a href="#">Maven Mousie Lavender</a></li>
+                    </ul>
+                </div>
+                <div class="column is-3">
+                    <h2><strong>Category</strong></h2>
+                    <ul>
+                        <li><a href="#">Labore et dolore magna aliqua</a></li>
+                        <li><a href="#">Kanban airis sum eschelor</a></li>
+                        <li><a href="#">Modular modern free</a></li>
+                        <li><a href="#">The king of clubs</a></li>
+                        <li><a href="#">The Discovery Dissipation</a></li>
+                        <li><a href="#">Course Correction</a></li>
+                        <li><a href="#">Better Angels</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h2><strong>Category</strong></h2>
+                    <ul>
+                        <li><a href="#">Objects in space</a></li>
+                        <li><a href="#">Playing cards with coyote</a></li>
+                        <li><a href="#">Goodbye Yellow Brick Road</a></li>
+                        <li><a href="#">The Garden of Forking Paths</a></li>
+                        <li><a href="#">Future Shock</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content has-text-centered">
+                <p>
+                    <a class="icon" href="https://github.com/BulmaTemplates/bulma-templates">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </p>
+                <div class="control level-item">
+                    <a href="https://github.com/BulmaTemplates/bulma-templates">
+                        <div class="tags has-addons">
+                            <span class="tag is-dark">Bulma Templates</span>
+                            <span class="tag is-info">MIT license</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="../js/bulma.js"></script>
+    </footer>
 </body>
+
 </html>

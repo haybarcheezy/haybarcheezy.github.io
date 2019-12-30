@@ -85,7 +85,7 @@
                 <h2 style="text-align: center; font-family: Mukta, sans-serif">Send A Message</h2>
             </div>
 
-    <form name="contact" netlify>
+    <form id="my-form" name="contact" netlify>
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left">
@@ -132,6 +132,14 @@
     </form>
         </div>
     </div>
+    <script>$("#my-form").submit(function(e) {
+        e.preventDefault();
+
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+            alert("Thank you!");
+        });
+    });</script>
 </section>
 <footer class="footer">
     <div class="container">
