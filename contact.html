@@ -18,7 +18,7 @@
 <section class="hero is-transparent" style="background: url(https://houstonwebandseo.com/wp-content/uploads/2019/12/slide-2.jpg); background-size: cover">
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand" style="background: #fff">
-            <a class="navbar-item" href="https://bulma.io">
+            <a class="navbar-item" href="https://affectionate-yalow-78b2b5.netlify.com/">
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -85,7 +85,25 @@
                 <h2 style="text-align: center; font-family: Mukta, sans-serif">Send A Message</h2>
             </div>
 
-    <form id="my-form" name="contact" action="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true">
+                <p class="field">
+                    <label class="label" style="padding-top: 10px">Name<input class= "input" type="text" name="name"/></label>
+                </p>
+                <p>
+                    <label class="label" style="padding-top: 10px">Email<input class="input" type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label class="label" style="padding-top: 10px;">Phone<input class="input" type="number" name="phone" /></label>
+                </p>
+                <p>
+                    <label class="label" style="padding-top: 10px">Message<textarea class="textarea" name="message"></textarea></label>
+                </p>
+                <p style="padding-top:10px">
+                    <button class="button is-primary" style="background-color: #7957d5;" type="submit">Submit</button>
+                </p>
+            </form>
+
+    <form id="my-form" name="contact" method="POST" data-netlify="true">
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left">
