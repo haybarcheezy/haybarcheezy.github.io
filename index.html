@@ -105,25 +105,25 @@
             <nav class="tabs is-boxed is-centered">
                 <div class="container">
                     <ul>
-                        <li class="is-active">
+                        <li class="is-active tab" onclick="openTab(event,'Home')">
                             <a>
                                 <span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span>
                                 <span>Home</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="tab" onclick="openTab(event,'WebDesign')">
                             <a>
                                 <span class="icon is-small"><i class="fa fa-desktop" aria-hidden="true"></i></span>
                                 <span>Web Design</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="tab" onclick="openTab(event,'Optimization')">
                             <a>
                                 <span class="icon is-small"><i class="fa fa-gears" aria-hidden="true"></i></span>
                                 <span>Optimization</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="tab" onclick="openTab(event,'Contact')">
                             <a>
                                 <span class="icon is-small"><i class="fa fa-phone" aria-hidden="true"></i></span>
                                 <span>Contact</span>
@@ -133,90 +133,252 @@
                 </div>
             </nav>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+        <script>function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("content-tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " is-active";
+        }</script>
     </section>
-    <section class="container">
-        <div class="columns features is-marginless is-vcentered" style="padding-top: 30px; padding-bottom: 30px">
-            <div class="column is-4">
-                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-                    <div class="card-image has-text-centered">
-                        <i class="fa fa-desktop" style="font-size: 3.5em; color: #7957d590"></i>
+    <div class="container section">
+        <div id="Home" class="content-tab">
+            <section class="container">
+                <div class="columns features is-marginless is-vcentered" style="padding-top: 30px; padding-bottom: 30px">
+                    <div class="column is-4">
+                        <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                            <div class="card-image has-text-centered">
+                                <i class="fa fa-desktop" style="font-size: 3.5em; color: #7957d590"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Design</h2>
+                                    <p>Give visitors a hassle free & pleasant website that allows them to complete a task, buy a product or contact you with not interference. A great website design isn’t just visually appealing, but is also easily navigated.</p>
+                                    <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="web-design.html" style="color: #363636">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Design</h2>
-                            <p>Give visitors a hassle free & pleasant website that allows them to complete a task, buy a product or contact you with not interference. A great website design isn’t just visually appealing, but is also easily navigated.</p>
-                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="web-design.html" style="color: #363636">Learn More</a></button>
+                    <div class="column is-4">
+                        <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                            <div class="card-image has-text-centered">
+                                <i class="fa fa-search" style="font-size: 3.5em; color: #7957d590"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h2 style="text-align: center; font-family: Mukta,sans-serif">Technical SEO</h2>
+                                    <p>Driving traffic to your business means being visible to search engines. Tailor your websites content to what your ideal customer will be searching for when looking for your businesses product or service. A site set-up correctly
+                                        will see higher monthly traffic.</p>
+                                    <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="Optimization.html" style="color: #363636">Learn More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
+                            <div class="card-image has-text-centered">
+                                <i class="fa fa-cogs" style="font-size: 3.5em; color: #7957d590"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Optimization</h2>
+                                    <p>Don’t destroy mobile users data plan with uncompressed images and unoptimized web pages. These factors are contributors to slow loading times and nobody likes waiting these days. An optimized site should be smooth and delivered
+                                        at blazing speed.</p>
+                                    <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="Optimization.html" style="color: #363636">Learn More</a></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column is-4">
-                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-                    <div class="card-image has-text-centered">
-                        <i class="fa fa-search" style="font-size: 3.5em; color: #7957d590"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Technical SEO</h2>
-                            <p>Driving traffic to your business means being visible to search engines. Tailor your websites content to what your ideal customer will be searching for when looking for your businesses product or service. A site set-up correctly
-                                will see higher monthly traffic.</p>
-                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="Optimization.html" style="color: #363636">Learn More</a></button>
+            </section>
+            <section>
+                <section class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column bottom" style="order: 1; text-align: center">
+                            <img src="https://houstonwebandseo.com/pictures/2019/12/finance-e1576513854497.png" alt="filler for bulma site">
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
+                                <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
+                                    out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
+                                    in mind, we have the tools to make it happen.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card is-shady" style="border-radius: 10px; padding-top: 20px">
-                    <div class="card-image has-text-centered">
-                        <i class="fa fa-cogs" style="font-size: 3.5em; color: #7957d590"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h2 style="text-align: center; font-family: Mukta,sans-serif">Web Optimization</h2>
-                            <p>Don’t destroy mobile users data plan with uncompressed images and unoptimized web pages. These factors are contributors to slow loading times and nobody likes waiting these days. An optimized site should be smooth and delivered
-                                at blazing speed.</p>
-                            <button class="button is-small" style="box-shadow: 0 2px 4px #00000018"><a href="Optimization.html" style="color: #363636">Learn More</a></button>
+                </section>
+                <section class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="text-align: center">
+                            <img src="https://houstonwebandseo.com/wp-content/uploads/2019/12/Filler-1.png" alt="filler image">
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
+                                <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
+                                    out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
+                                    in mind, we have the tools to make it happen.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
         </div>
-    </section>
-    <section>
-        <section class="container" style="padding-left: 1em; padding-right: 1em;">
-            <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
-                <div class="column bottom" style="order: 1; text-align: center">
-                    <img src="https://houstonwebandseo.com/pictures/2019/12/finance-e1576513854497.png" alt="filler for bulma site">
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
-                        <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
-                        <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
-                            out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
-                            in mind, we have the tools to make it happen.</p>
+    </div>
+    <div class="container section">
+        <div id="WebDesign" class="content-tab">
+            <section style="padding-top: 60px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="order: 1; text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/HTML-Laptop.png" alt="Professional Small Business Websites">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Professional Grade Websites</h2>
+                                <p style="text-align: left"><strong>Designed with the goal of turning visitors into leads.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
+                                    built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
+                                    and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
+                                    beautiful and unique website or a power-house lead generating website designed strictly with marketing in
+                                    mind, we have the tools to make it happen.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container" style="padding-left: 1em; padding-right: 1em;">
-            <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
-                <div class="column" style="text-align: center">
-                    <img src="https://houstonwebandseo.com/wp-content/uploads/2019/12/Filler-1.png" alt="filler image">
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <h2 style="text-align: left; font-family: Mukta,sans-serif">A Platform to Grow Your Business</h2>
-                        <p style="text-align: left"><strong>We build professional websites and help small businesses reach the first page of Google search results.</strong></p>
-                        <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed
-                            out on WordPress and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a beautiful and unique website or a power-house lead generating website designed strictly with marketing
-                            in mind, we have the tools to make it happen.</p>
+            </section>
+            <section style="background: #fafafa; padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/Wordpress-Laptop.png" alt="WordPress Development">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">WordPress® CMS</h2>
+                                <p style="text-align: left"><strong>The most popular CMS for small business websites.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
+                                    built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
+                                    and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
+                                    beautiful and unique website or a power-house lead generating website designed strictly with marketing in
+                                    mind, we have the tools to make it happen.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </section>
+            </section>
+            <section style="padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="order: 1; text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/Code-Laptop.png" alt="Custom HTML, CSS, JS Websites">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Custom Website Development</h2>
+                                <p style="text-align: left"><strong>Static websites without the need for expandability.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
+                                    built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
+                                    and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
+                                    beautiful and unique website or a power-house lead generating website designed strictly with marketing in
+                                    mind, we have the tools to make it happen.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background:#fafafa; padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/Touch-Ups-Laptop.png" alt="filler image">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Website "Touch-Ups"</h2>
+                                <p style="text-align: left"><strong>Is your website out of date or just not performing how you wished? Don’t worry. We’ve got your back.</strong></p>
+                                <p>We like to think of ourselves as a web design company that provides SEO services to Houston based businesses. 99% of our websites are
+                                    built using WordPress CMS due to its expandability to grow on. Updates are constantly pushed out on WordPress
+                                    and limitless amounts of custom plug-ins and software are available as add-ons. Whether you set out to have a
+                                    beautiful and unique website or a power-house lead generating website designed strictly with marketing in
+                                    mind, we have the tools to make it happen.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container content">
+        <div id="Optimization" class="content-tab">
+            <section style="padding-top: 60px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="order: 1; text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/featured_img.png" alt="Houston SEO Consulting">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">SEO Consulting</h2>
+                                <p style="text-align: left"><strong>Establish your local brand authority.</strong></p>
+                                <p>Learn what your website needs. We identify on-page SEO mechanical Elements such as tags, alt images, text structure & formatting while putting content in the order most effective to receive a response from the visitor. SEO Consulting is an excellent way to discover what your visitors were searching for when finding your site while performing keyword discovery research to indicate if your website’s content can be altered to better fit online user’s Google web search.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background: #fafafa; padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/featureimg1-1.png" alt="Houston Local SEO">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Houston Local SEO</h2>
+                                <p style="text-align: left"><strong>Are you branding yourself as an expert in your niche?</strong></p>
+                                <p>Houston businesses will find an incredibly efficient way to gain brand visibility through Local Search Engine Optimization. It allows businesses to be found more easily on the local Google Business Suggestions during a search. A large piece to local SEO is making sure this information is up-to-date, throughly described with an accurate representation of your business.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="order: 1; text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/error.png" alt="Houston Technical SEO">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Houston Technical SEO</h2>
+                                <p style="text-align: left"><strong>Allow search engines to access, read, interpret & index your site.</strong></p>
+                                <p>Websites can be perfectly up-to-date on the front-end, but taking a look  “under the hood” can arise a cause for concern. Can search engine bots index your page? Can search engine bots render your page? Are bots understanding your page contents? Are your webpages worthy of ranking on Google? Is your site secure from attackers? These are all technical SEO questions we ask to ensure a website can be simple for Google to understand and in-turn put your business on the map.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background:#fafafa; padding-top: 40px; padding-bottom: 40px">
+                <div class="container" style="padding-left: 1em; padding-right: 1em;">
+                    <div class="columns is-vcentered" style="padding-top: 60px; padding-bottom: 60px">
+                        <div class="column" style="text-align: center">
+                            <img style="width: 90%" src="https://houstonwebandseo.com/pictures/2019/10/process_4.png" alt="Houston Conversion Rate Optimization">
+                        </div>
+                        <div class="column">
+                            <div class="content"><h2 style="text-align: left; font-family: Mukta,sans-serif">Conversion Rate Optimization</h2>
+                                <p style="text-align: left"><strong>We analyze your analytics and tailor a unique strategy to generate more leads to your business.</strong></p>
+                                <p>Conversion rate optimization (CRO) is the effort to increase the amount of traffic (website visitors) who take a designed action. This could mean increasing the mount of leads that view your website and book an appointment online or the number of direct sales your online store brings in.</p>
+                                <p>Through an analysis of a website, we can strategize best practices to either increase overall traffic to the website or if the site is already generating heavy traffic we can focus on increasing the amount of visitors that convert. The key to a successful CRO strategy is collecting solid web analytics to reinforce your efforts on where to focus.</p></div>
+                            <button class="button" style="border-width: 0px; background: #7957d5; font-family: Mukta,sans-serif; font-weight: 800; box-shadow: 0 2px 4px #00000018; color: #fff;"><a href="contact.html" style="color: #fff">Get Started</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
     <section style="padding-top: 120px; padding-bottom: 60px; background: #7957d5">
         <div class="container" style="box-shadow: 0 2px 4px #00000018; max-width: 600px; padding-left: 2em; padding-right: 2em; padding-top: 60px; padding-bottom: 60px; background: #ffffff; border-radius: 10px">
             <div class="content">
