@@ -3608,7 +3608,7 @@ a.tag:hover {
 
 .card {
   background-color: white;
-  box-shadow: 0 .5em 1em -.125px rgba(10, 10, 10, 0.1), 0 12 10 4px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   color: #4a4a4a;
   max-width: 100%;
   position: relative; padding-top: 20px;}
