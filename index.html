@@ -22,8 +22,8 @@
     <section class="hero is-large is-info">
         <div class="hero-head">
             <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand" style="background: #fff">
-                    <a class="navbar-item" href="https://bulma.io">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="haybarcheezy.github.io">
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg width="39px" height="40px" viewBox="0 0 39 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -40,7 +40,7 @@
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="navbarBasicExample" class="navbar-menu" style="background: #fff">
+                <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start">
                         <a href="https://affectionate-yalow-78b2b5.netlify.com/" class="navbar-item" style="color: rgb(0, 0, 0, 0.7); font-family: Mukta, sans-serif;">
             Home
@@ -383,97 +383,76 @@
             </section>
         </div>
     </div>
-    <div id="Contact" class="content-tab">
-            <section class="container">
-                <div class="columns">
-                    <div class="column has-text-centered">
-                        <a class="button is-primary">
+        <div id="Contact" class="content-tab" style="display: none">
+                <section class="container" style="padding-bottom: 120px">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <div class="title">
+                                <h2 class="title">How would you like to reach us?</h2>
+                            </div>
+                            <a class="button is-primary">
                             <span class="icon is-small">
                                 <i class="fa fa-inbox"></i>
                             </span>
-                            <span>Send Email</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="container" id="app">
-                    <div id="form-modal" class="modal">
-                        <div class="modal-background">
-                        </div>
-                        <div class="modal-content">
-                            <div class="modal-card">
-                                <header class="modal-card-head">
-                                    <h2 class="modal-card-title has-text-centered">Send A Message</h2>
-                                </header>
-                                <section class="modal-card-body">
-                                    <form name="contact">
-                                        <div class="field">
-                                            <label class="label">Name</label>
-                                            <div class="control has-icons-left">
-                                                <input class="input" type="text" placeholder="e.g Alex Smith">
-                                                <span class="icon is-small is-left">
-                                                <i class="fa fa-user"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="field">
-                                            <label class="label">Email</label>
-                                            <div class="control has-icons-left">
-                                                <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
-                                                <span class="icon is-small is-left">
-                                                <i class="fa fa-envelope"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="field">
-                                            <label class="label">Phone</label>
-                                            <div class="control has-icons-left">
-                                                <input class="input" type="number" placeholder="e.g (000) 000-000">
-                                                <span class="icon is-small is-left">
-                                                <i class="fa fa-phone"></i>
-                                            </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="field">
-                                            <label class="label">Message</label>
-                                            <div class="control">
-                                                <textarea class="textarea" placeholder="How can we help you?"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="field is-grouped">
-                                            <div class="control">
-                                                <button class="button is-primary" style="box-shadow: 0 2px 4px #00000018; background-color: #7957d5;">Submit</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <button class="button">Cancel</button>
-                                </footer>
-                            </div>
-                        </div>
-                        <button id="image-modal-close" class="modal-close"></button>
-                    </div>
-                        <div class="column has-text-centered">
-                            <a id="showModal" class="button is-info">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-envelope"></i>
-                                    </span>
+                                <span>Send Email</span>
+                            </a>
+                            <a class="button is-info modal-button" data-target="#myModal" aria-haspopup="true">
+                                <span class="icon is-small">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
                                 <span>Send Message</span>
                             </a>
                         </div>
-                </div>
-            </section>
-    </div>>
+                        <div class="modal" id="myModal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="container" style="max-width: 600px; padding-left: 2em; padding-right: 2em; padding-top: 60px; background: #fff; padding-bottom: 60px; ; border-radius: 10px; box-shadow: 0 8px 18px #00000060;">
+                                    <div class="content">
+                                        <h2 style="text-align: center; font-family: Mukta, sans-serif">Send A Message</h2>
+                                    </div>
+
+                                    <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
+                                        <p class="field">
+                                            <label class="label" style="padding-top: 10px">Name<input class= "input" type="text" name="name"/></label>
+                                        </p>
+                                        <p>
+                                            <label class="label" style="padding-top: 10px">Email<input class="input" type="email" name="email" /></label>
+                                        </p>
+                                        <p>
+                                            <label class="label" style="padding-top: 10px;">Phone<input class="input" type="number" name="phone" /></label>
+                                        </p>
+                                        <p>
+                                            <label class="label" style="padding-top: 10px">Message<textarea class="textarea" name="message"></textarea></label>
+                                        </p>
+                                        <p style="padding-top:10px">
+                                            <button class="button is-primary" type="submit">Submit</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    <script>
+        document.querySelectorAll('.modal-button').forEach(function(el) {
+            el.addEventListener('click', function() {
+                var target = document.querySelector(el.getAttribute('data-target'));
+
+                target.classList.add('is-active');
+
+                target.querySelector('.modal-close').addEventListener('click',   function() {
+                    target.classList.remove('is-active');
+                });
+            });
+        });
+    </script>
     <footer class="footer">
         <div class="container">
             <div class="columns">
-                <div class="column">
-                    <h2><strong>Category</strong></h2>
+                <div class="column has-text-centered">
+                    <h2>🖥️ Website created by <strong>Haybarcheezy.github.io</strong> with <strong>Bulma CSS. 👌</strong></h2>
 
                 </div>
             </div>
