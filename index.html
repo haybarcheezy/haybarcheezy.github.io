@@ -384,11 +384,10 @@
         </div>
     </div>
     <div id="Contact" class="content-tab">
-        <section>
-            <div class="container">
+            <section class="container">
                 <div class="columns">
                     <div class="column has-text-centered">
-                        <a class="button is-success">
+                        <a class="button is-primary">
                             <span class="icon is-small">
                                 <i class="fa fa-inbox"></i>
                             </span>
@@ -396,70 +395,80 @@
                         </a>
                     </div>
                 </div>
-                <div class="column has-text-centered">
-                    <a id="add modal" class="button is-info">
-                            <span class="icon is-small">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-                        <span>Send Message</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-    <section style="padding-top: 120px; padding-bottom: 60px; background: #7957d5">
-        <div class="container" style="box-shadow: 0 2px 4px #00000018; max-width: 600px; padding-left: 2em; padding-right: 2em; padding-top: 60px; padding-bottom: 60px; background: #ffffff; border-radius: 10px">
-            <div class="content">
-                <h2 style="text-align: center; font-family: Mukta,sans-serif">Send A Message</h2>
-            </div>
+                <div class="container" id="app">
+                    <div id="form-modal" class="modal">
+                        <div class="modal-background">
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-card">
+                                <header class="modal-card-head">
+                                    <h2 class="modal-card-title has-text-centered">Send A Message</h2>
+                                </header>
+                                <section class="modal-card-body">
+                                    <form name="contact">
+                                        <div class="field">
+                                            <label class="label">Name</label>
+                                            <div class="control has-icons-left">
+                                                <input class="input" type="text" placeholder="e.g Alex Smith">
+                                                <span class="icon is-small is-left">
+                                                <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
 
-            <form name="contact" netlify>
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control has-icons-left">
-                        <input class="input" type="text" placeholder="e.g Alex Smith">
-                        <span class="icon is-small is-left">
-        <i class="fa fa-user"></i>
-      </span>
+
+                                        <div class="field">
+                                            <label class="label">Email</label>
+                                            <div class="control has-icons-left">
+                                                <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
+                                                <span class="icon is-small is-left">
+                                                <i class="fa fa-envelope"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label">Phone</label>
+                                            <div class="control has-icons-left">
+                                                <input class="input" type="number" placeholder="e.g (000) 000-000">
+                                                <span class="icon is-small is-left">
+                                                <i class="fa fa-phone"></i>
+                                            </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="label">Message</label>
+                                            <div class="control">
+                                                <textarea class="textarea" placeholder="How can we help you?"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="field is-grouped">
+                                            <div class="control">
+                                                <button class="button is-primary" style="box-shadow: 0 2px 4px #00000018; background-color: #7957d5;">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </section>
+                                <footer class="modal-card-foot">
+                                    <button class="button">Cancel</button>
+                                </footer>
+                            </div>
+                        </div>
+                        <button id="image-modal-close" class="modal-close"></button>
                     </div>
+                        <div class="column has-text-centered">
+                            <a id="showModal" class="button is-info">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                <span>Send Message</span>
+                            </a>
+                        </div>
                 </div>
-
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control has-icons-left">
-                        <input class="input" type="email" placeholder="e.g Alexsmith@gmail.com">
-                        <span class="icon is-small is-left">
-      <i class="fa fa-envelope"></i>
-    </span>
-                    </div>
-                </div>
-
-
-                <div class="field">
-                    <label class="label">Phone</label>
-                    <div class="control has-icons-left">
-                        <input class="input" type="number" placeholder="e.g (000) 000-000">
-                        <span class="icon is-small is-left">
-        <i class="fa fa-phone"></i>
-      </span>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="How can we help you?"></textarea>
-                    </div>
-                </div>
-
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-primary" style="box-shadow: 0 2px 4px #00000018; background-color: #7957d5;">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+            </section>
+    </div>>
     <footer class="footer">
         <div class="container">
             <div class="columns">
