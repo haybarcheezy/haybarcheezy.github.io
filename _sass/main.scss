@@ -286,3 +286,9 @@ svg {
   }
 
 }
+.is-large.delete.is-large.modal-close {
+  background-color: #fff !important;
+}
+.delete::after.delete::before.modal-close::after.modal-close::before {
+  background-color: grey !important;
+}

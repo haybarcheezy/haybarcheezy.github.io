@@ -121,7 +121,7 @@ $primary-invert: $pink-invert;
   vertical-align: top;
   width: 20px; }
   .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-    background-color: white;
+    background-color: grey;
     content: "";
     display: block;
     left: 50%;
@@ -4064,7 +4064,7 @@ a.list-item {
       width: 640px; } }
 
 .modal-close {
-  background: none;
+  background: #ffffff;
   height: 40px;
   position: fixed;
   right: 20px;
