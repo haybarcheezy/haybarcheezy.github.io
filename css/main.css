@@ -27,14 +27,32 @@ $primary-invert: $pink-invert;
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+
 @-webkit-keyframes shadow-drop-2-br{0%{-webkit-transform:translateZ(0) translateX(0) translateY(0);transform:translateZ(0) translateX(0) translateY(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px) translateX(-12px) translateY(-12px);transform:translateZ(50px) translateX(-12px) translateY(-12px);-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}@keyframes shadow-drop-2-br{0%{-webkit-transform:translateZ(0) translateX(0) translateY(0);transform:translateZ(0) translateX(0) translateY(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px) translateX(-12px) translateY(-12px);transform:translateZ(50px) translateX(-12px) translateY(-12px);-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}
 
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+  url('../fonts/poppins-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/poppins-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+  url('../fonts/poppins-v9-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/poppins-v9-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* poppins-700 - latin */
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  display: block;
   src: local('Poppins Bold'), local('Poppins-Bold'),
   url('../fonts/poppins-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../fonts/poppins-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -44,7 +62,6 @@ $primary-invert: $pink-invert;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
-  display: block;
   src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
   url('../fonts/poppins-v9-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../fonts/poppins-v9-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -65,6 +82,8 @@ $primary-invert: $pink-invert;
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg); } }
+
+
 
 
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
@@ -337,7 +356,7 @@ textarea {
 code,
 pre {
   -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: none ;
   font-family: monospace; }
 
 body {
@@ -1186,7 +1205,7 @@ a.box:active {
 .button {
   background-color: white;
   border-color: #dbdbdb;
-  box-shadow: 0px 2px 4px #00000018;
+  box-shadow: 0 2px 4px #00000018;
   border-width: 1px;
   color: #363636;
   cursor: pointer;
@@ -1859,7 +1878,7 @@ a.box:active {
       position: absolute;
       left: calc(50% - (1em / 2));
       top: calc(50% - (1em / 2));
-      position: absolute !important; }
+    }
   .button.is-static {
     background-color: whitesmoke;
     border-color: #dbdbdb;
@@ -2050,7 +2069,6 @@ a.box:active {
   .content table td,
   .content table th {
     border: 1px solid #dbdbdb;
-    border-width: 0 0 1px;
     padding: 0.5em 0.75em;
     vertical-align: top; }
   .content table th {
@@ -3212,7 +3230,6 @@ a.box:active {
   .table td,
   .table th {
     border: 1px solid #dbdbdb;
-    border-width: 0 0 1px;
     padding: 0.5em 0.75em;
     vertical-align: top; }
     .table td.is-white,
@@ -3609,7 +3626,7 @@ a.tag:hover {
 
 .card {
   background-color: white;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   color: #4a4a4a;
   max-width: 100%;
   position: relative; padding-top: 20px;}
@@ -4580,8 +4597,6 @@ body.has-navbar-fixed-bottom {
     -webkit-transform-origin: center;
             transform-origin: center;
     transition-duration: 86ms;
-    transition-property: background-color, opacity, -webkit-transform;
-    transition-property: background-color, opacity, transform;
     transition-property: background-color, opacity, transform, -webkit-transform;
     transition-timing-function: ease-out;
     width: 16px; }
@@ -6262,8 +6277,6 @@ label.panel-block {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
   min-height: min-content; }
   .tile.is-ancestor {
     margin-left: -0.75rem;
