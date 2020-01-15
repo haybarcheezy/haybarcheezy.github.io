@@ -93,7 +93,6 @@
                 </li>
             </ul>
     </nav>
-    <script src="_javascript/main.js"></script>
     <div class="container section">
         <div id="Home" class="content-tab">
             <section class="container">
@@ -375,19 +374,6 @@
                     </div>
                 </section>
         </div>
-    <script>
-        document.querySelectorAll('.modal-button').forEach(function(el) {
-            el.addEventListener('click', function() {
-                var target = document.querySelector(el.getAttribute('data-target'));
-
-                target.classList.add('is-active');
-
-                target.querySelector('.modal-close').addEventListener('click',   function() {
-                    target.classList.remove('is-active');
-                });
-            });
-        });
-    </script>
     <footer class="footer">
         <div class="container">
             <div class="columns">
