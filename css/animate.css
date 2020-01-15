@@ -1,3 +1,12 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* poppins-regular - latin */
 @font-face {
     font-family: 'Poppins';
@@ -71,3 +80,13 @@
     100% { transform: translateY(15px); opacity: 0;}
 }
 
+span {
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
