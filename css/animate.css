@@ -80,13 +80,3 @@
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-span {
-    opacity: 0;
-    transition: all 1s ease;
-    transform: translateY(50px);
-    display: inline-block;
-}
-span.fade {
-    opacity: 1;
-    transform: translateY(0px);
-}
