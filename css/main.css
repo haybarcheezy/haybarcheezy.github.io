@@ -27,6 +27,13 @@ $primary-invert: $pink-invert;
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+.pressed {
+  box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+								inset -2px -2px 12px rgba(255,255,255,0.5),
+								inset 2px 2px 4px rgba(255,255,255,0.1),
+								inset 2px 2px 8px rgba(0,0,0,0.15);
+}
+ 
 
 @-webkit-keyframes shadow-drop-2-br{0%{-webkit-transform:translateZ(0) translateX(0) translateY(0);transform:translateZ(0) translateX(0) translateY(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px) translateX(-12px) translateY(-12px);transform:translateZ(50px) translateX(-12px) translateY(-12px);-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}@keyframes shadow-drop-2-br{0%{-webkit-transform:translateZ(0) translateX(0) translateY(0);transform:translateZ(0) translateX(0) translateY(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px) translateX(-12px) translateY(-12px);transform:translateZ(50px) translateX(-12px) translateY(-12px);-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}
 
@@ -5100,12 +5107,14 @@ label.panel-block {
     padding: 0.5em 1em;
     vertical-align: top; }
     .tabs a:hover {
-      border-bottom-color: #363636;
-      color: #363636; }
+      box-shadow: -16px -16px 24px 0 rgba(249, 255, 253, 1),
+        16px 16px 24px 0 rgba(0, 0, 0, 0.2); }
   .tabs li {
     display: block; }
     .tabs li.is-active a {
       border-bottom-color: #69D59A;
+      box-shadow: inset -7px -7px 17px rgba(255,255,255,0.6),
+                inset 7px 7px 17px rgba(70,70,70,0.15)
       color: #69D59A; }
   .tabs ul {
     align-items: center;
