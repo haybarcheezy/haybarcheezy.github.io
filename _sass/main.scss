@@ -37,14 +37,14 @@ $primary-invert: $pink-invert;
 }
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-@import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url(https://fonts.googleapis.com/css?family=Kulim+Park:600,700&display=block&subset=latin-ext);
 
 $pink    : #ff006a;
 $purple  : #7b00e0;
 $orange  : #ff7900;
 $aqua    : #66e6ff;
 $yellow  : #ffc901;
-$font    : 'Titan One', san-serif;
+$font    : 'Kulim Park', san-serif;
 
 @mixin base-font($size) {
   font-size: $size;
@@ -80,7 +80,7 @@ body {
   &.full-menu {
     border-radius: 0;
     padding: 0 !important;
-    position: aboslute;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
@@ -121,7 +121,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 0%;
+  height: 0;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;

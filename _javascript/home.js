@@ -17,12 +17,12 @@
 
             // Scroll the page by an increment, and check if it's time to stop
             var animateScroll = function () {
-                window.scrollBy(0, increments);
+                window.scrollBy(1, increments);
                 stopAnimation();
             };
 
             // If scrolling down
-            if ( increments >= 0 ) {
+            if ( increments >= 1 ) {
                 // Stop animation when you reach the anchor OR the bottom of the page
                 stopAnimation = function () {
                     var travelled = window.pageYOffset;
@@ -48,7 +48,7 @@
         };
 
         // Define smooth scroll links
-        var scrollToggle = document.querySelectorAll('.scroll');
+        var scrollToggle = document.querySelectorAll('.gobutton.scroll');
 
         // For each smooth scroll link
         [].forEach.call(scrollToggle, function (toggle) {
