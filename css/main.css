@@ -26,7 +26,45 @@ $primary-invert: $pink-invert;
  * See http://animista.net/license for more info.
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+.gobutton {
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: block;
+  transition: all .3s;
+  box-shadow: 9px 9px 9px rgba(0,0,0,0.06), -9px -9px 9px rgba(255,255,255,0.6), inset 5px 5px 5px rgba(0,0,0,0.07), inset -5px -5px 5px rgba(255,255,255,0.7)!important;
+}
+.gobutton:hover::before {
+  box-shadow: inset 3px 3px 3px rgba(255,255,255,0.35),
+  inset -3px -3px 3px rgba(0,0,0,0.035)!important;
+}
+.gobutton::before {
+  content:''!important;
+  position: absolute!important;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px!important;
+  background-color: #33d9b2;
+  top: 50%!important;
+  left: 50%!important;
+  margin: -15px 0 0 -15px;
+  box-shadow: inset 2px 1px 3px rgba(255,255,255,0.5), inset 4px 5px 3px rgba(0,0,0,0.05);
+}
 
+
+.gobutton svg {
+  position: inherit;
+  left: 1px;
+}
 .pressed {
   box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
 								inset -2px -2px 12px rgba(255,255,255,0.5),
@@ -147,7 +185,7 @@ $primary-invert: $pink-invert;
   vertical-align: top;
   width: 20px; }
   .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-    background-color: grey;
+    background-color: #ff3860!important;
     content: "";
     display: block;
     left: 50%;
@@ -1212,7 +1250,7 @@ a.box:active {
 .button {
   background-color: #ebf5fc!important;
   border-color: #ebf5fc!important;
-  box-shadow: -4px -4px 15px rgba(255,255,255,1), 4px 4px 15px rgba(0,0,0,0.1)!important;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.1), -5px -5px 10px 0px rgba(255,255,255,0.9)!important;
   border-width: 1px;
   color: #363636;
   cursor: pointer;
@@ -1225,7 +1263,7 @@ a.box:active {
   white-space: nowrap; }
 
   .button:hover {
-    box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5), inset 4px 4px 10px rgba(0,0,0,0.1)!important;
+    box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.1), inset -3px -3px 5px 0px rgba(255,255,255,0.9)!important;
   }
   .button strong {
     color: inherit; }
@@ -1243,7 +1281,8 @@ a.box:active {
     margin-right: calc(-0.375em - 1px); }
   .button:hover, .button.is-hovered {
     border-color: #b5b5b5;
-    color: #363636; }
+    color: #363636;
+  }
   .button:focus, .button.is-focused {
     border-color: #3273dc;
     color: #363636; }
@@ -1251,7 +1290,9 @@ a.box:active {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
   .button:active, .button.is-active {
     border-color: #4a4a4a;
-    color: #363636; }
+    color: #363636;
+  }
+
   .button.is-text {
     background-color: transparent;
     border-color: transparent;
@@ -2108,10 +2149,11 @@ a.box:active {
 
 .input,
 .textarea {
-  background-color: white;
-  border-color: #dbdbdb;
+  background-color: #ebf5fc!important;
+  border-color: #ebf5fc!important;
   color: #363636;
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  border-radius: 40px!important;
+  box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.1), inset -3px -3px 5px 0px rgba(255,255,255,0.9)!important;
   max-width: 100%;
   width: 100%; }
   .input::-moz-placeholder,
@@ -2290,7 +2332,7 @@ a.box:active {
     min-height: 120px;
     border-color: #ebf5fc!important;
     background: #ebf5fc!important;
-    box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5), inset 4px 4px 10px rgba(0,0,0,0.1)!important; }
+    box-shadow: inset 3px 3px 5px 0px rgba(0,0,0,0.1), inset -3px -3px 5px 0px rgba(255,255,255,0.9)!important; }
   .textarea[rows] {
     height: initial; }
   .textarea.has-fixed-size {
@@ -3641,9 +3683,14 @@ a.tag:hover {
 .card {
   background-color: #ebf5fc!important;
   box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1)!important;
+  border-radius: 40px!important;
   color: #4a4a4a;
   max-width: 100%;
   position: relative; padding-top: 20px;}
+
+.card.is-shady {
+  border-radius: 40px!important;
+}
 
 .card:hover {
   box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05)!important;
@@ -4099,12 +4146,19 @@ a.list-item {
       width: 640px; } }
 
 .modal-close {
-  background: #ffffff;
+  background: #ebf5fc!important;
   height: 40px;
   position: fixed;
   right: 20px;
   top: 20px;
-  width: 40px; }
+  box-shadow: 9px 9px 9px 1px rgba(0,0,0,0.07), -9px -9px 9px 1px rgba(255,255,255,.5)!important;
+  width: 40px;
+
+}
+
+.modal-close:hover {
+  box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5), inset 4px 4px 10px rgba(0,0,0,0.1)!important;
+}
 
 .modal-card {
   display: flex;
@@ -5112,7 +5166,7 @@ label.panel-block {
   }
   .tab {
     padding: 10px 20px!important;
-  border-radius: 15px!important;
+  border-radius: 40px!important;
   background-color: #ebf5fc!important;
   box-shadow: -4px -4px 15px rgba(255,255,255,1), 4px 4px 15px rgba(0,0,0,0.1)!important;
   }
