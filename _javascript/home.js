@@ -1,3 +1,4 @@
+//scroll to tabs
 (function() {
 
     'use strict';
@@ -12,17 +13,17 @@
             var startLocation = window.pageYOffset;
             var endLocation = anchor.offsetTop;
             var distance = endLocation - startLocation;
-            var increments = distance/(duration/16);
+            var increments = distance/(duration/8);
             var stopAnimation;
 
             // Scroll the page by an increment, and check if it's time to stop
             var animateScroll = function () {
-                window.scrollBy(1, increments);
+                window.scrollBy(.5, increments);
                 stopAnimation();
             };
 
             // If scrolling down
-            if ( increments >= 1 ) {
+            if ( increments >= .5 ) {
                 // Stop animation when you reach the anchor OR the bottom of the page
                 stopAnimation = function () {
                     var travelled = window.pageYOffset;

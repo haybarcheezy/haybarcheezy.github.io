@@ -26,6 +26,9 @@ $primary-invert: $pink-invert;
  * See http://animista.net/license for more info.
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+
+
+
 .gobutton {
   cursor: pointer;
   margin: auto;
@@ -95,10 +98,10 @@ $primary-invert: $pink-invert;
   font-weight: 400;
   src: url('../fonts/kulim-park-v1-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Kulim Park Regular'), local('KulimPark-Regular'),
-  url('../fonts/kulim-park-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/kulim-park-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/kulim-park-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
-  url('../fonts/kulim-park-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/kulim-park-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/fonts/kulim-park-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/kulim-park-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('/fonts/kulim-park-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 /* kulim-park-600 - latin */
 @font-face {
@@ -3219,14 +3222,17 @@ a.box:active {
   overflow: hidden;
   padding: 0;
   width: 100%; }
+  .progress:indeterminate {
+    background-image: linear-gradient(right,#33d9b2, #33d9b2)!important;
+  }
   .progress::-webkit-progress-bar {
     background-color: #dbdbdb; }
   .progress::-webkit-progress-value {
-    background-color: #4a4a4a; }
+    background-color: #33d9b2!important; }
   .progress::-moz-progress-bar {
-    background-color: #4a4a4a; }
+    background-color: #33d9b2!important; }
   .progress::-ms-fill {
-    background-color: #4a4a4a;
+    background-color: #33d9b2!important;
     border: none; }
   .progress.is-white::-webkit-progress-value {
     background-color: white; }
