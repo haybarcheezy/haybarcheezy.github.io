@@ -30,6 +30,14 @@ $primary-invert: $pink-invert;
 .zoom { transition: all .2s ease-in-out; }
 .zoom:hover { transform: scale(.95); }
 
+
+.tab.is-active {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #00FFE0;
+}
+
+
 .gobutton {
   cursor: pointer;
   margin: auto;
@@ -4807,8 +4815,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+    background-color: #ebf5fc;
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
       display: block; }

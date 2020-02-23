@@ -13,3 +13,4 @@ for (i = 0; i < x.length; i++) {
 document.getElementById(tabName).style.display = "block";
 evt.currentTarget.className += " is-active";
 }
+
