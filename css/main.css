@@ -57,7 +57,7 @@ $primary-invert: $pink-invert;
   width: 30px;
   height: 30px;
   border-radius: 10px!important;
-  background-color: #33d9b2;
+  background-color: #00FFE0;
   top: 50%!important;
   left: 50%!important;
   margin: -15px 0 0 -15px;
@@ -3224,16 +3224,16 @@ a.box:active {
   padding: 0;
   width: 100%; }
   .progress:indeterminate {
-    background-image: linear-gradient(right,#33d9b2, #33d9b2)!important;
+    background-image: linear-gradient(right,#00FFE0, #00FFE0)!important;
   }
   .progress::-webkit-progress-bar {
     background-color: #dbdbdb; }
   .progress::-webkit-progress-value {
-    background-color: #33d9b2!important; }
+    background-color: #00FFE0!important; }
   .progress::-moz-progress-bar {
-    background-color: #33d9b2!important; }
+    background-color: #00FFE0!important; }
   .progress::-ms-fill {
-    background-color: #33d9b2!important;
+    background-color: #00FFE0!important;
     border: none; }
   .progress.is-white::-webkit-progress-value {
     background-color: white; }
