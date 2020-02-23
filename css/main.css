@@ -26,6 +26,10 @@ $primary-invert: $pink-invert;
  * See http://animista.net/license for more info.
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+
+.zoom { transition: all .2s ease-in-out; }
+.zoom:hover { transform: scale(.95); }
+
 .gobutton {
   cursor: pointer;
   margin: auto;
