@@ -49,7 +49,7 @@
         };
 
         // Define smooth scroll links
-        var scrollToggle = document.querySelectorAll('.gobutton.scroll');
+        var scrollToggle = document.querySelectorAll('.gobutton.scroll.zoom');
 
         // For each smooth scroll link
         [].forEach.call(scrollToggle, function (toggle) {
